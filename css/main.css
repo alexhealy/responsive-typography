@@ -17,30 +17,33 @@ html {
   box-sizing: inherit;
 }
 
-article {
-  max-width: 43em;
-}
-
 article h1 {
   font-weight: normal;
 }
 
-article header {
-  border-bottom: 1px solid #999;
+article ol {
+  list-style: decimal;
+}
+
+article {
+  max-width: 43em;
+}
+
+article p {
+  font-weight: normal;
+  margin-top: 1.3em;
 }
 
 article header p {
   font-style: italic;
 }
 
-article > p:last-child {
+article header {
   border-bottom: 1px solid #999;
 }
 
-blockquote {
-  max-width: 24em;
-  color: #555;
-  font-size: 1.125rem;
+article > p:last-child {
+  border-bottom: 1px solid #999;
 }
 
 .quote {
@@ -50,6 +53,12 @@ blockquote {
 body {
   margin: 0;
   font-family: "Crimson Text", serif;
+}
+
+blockquote {
+  max-width: 24em;
+  color: #555;
+  font-size: 1.125rem;
 }
 
 @media only screen and (min-width: 20em) {
@@ -109,7 +118,7 @@ body {
   }
 
   p, ol {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   article {
@@ -176,7 +185,6 @@ body {
 
   html {
     font-size: 130%;
-    line-height: 1.6;
     width: 900px;
     padding: 0 100px;
     margin-left: 60px;
